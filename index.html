@@ -8,16 +8,11 @@
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <script src="js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script>
-      $('a').click(function(){
-        $('html, body').animate({
-            scrollTop: $( $.attr(this, 'href') ).offset().top
-        }, 500);
-        return false;
-      });
-    </script>
     <!--Fonts-->
     <link href='http://fonts.googleapis.com/css?family=Lato:400,300,200,100' rel='stylesheet' type='text/css'>
+    <!--Favicon-->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
     <title>Ophast</title>
   </head>
 
@@ -36,10 +31,29 @@
     <div id="ctf">
       <div class="container">
         <h1>CTFs</h1>
-        <p>I am a part of the team TheePotato which competes in capture-the-flag hacking competitions.  So far, our greatest accomplishment is placing 26th out of over 3000 teams in picoCTF, run by Carneige Mellon University.</p>
+        <p>I am a part of the hacking team TheePotato which competes in capture-the-flag competitions.  So far, our greatest accomplishment is placing 26th out of over 3000 teams in picoCTF, run by Carneige Mellon University.</p>
       </div>
     </div>
 
-    <div class=""
+    <div id="projects">
+      <div class="container">
+        <h1>Projects</h1>
+        <p>I love computers and so I try to learn as much as I can about them in every way I can.  I am mostly interested in software development and web design, so I mostly write code in those fields.</p>
+        <div class="row">
+          <div class="col-md-4">
+            <h2>Potato CTF</h2>
+            <p>Potato CTF is a CTF hacking competition by TheePotato for high school students.</p>
+          </div>
+          <div class="col-md-4">
+            <h2>Rantr</h2>
+            <p>Rantr is a website dedicated to free speech about controversial and important topics.</p>
+          </div>
+          <div class="col-md-4">
+            <h2>Pebble Cards</h2>
+            <p>Pebble Cards is a Pebble app which allows for flashcard studying on the Pebble watches.</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
