@@ -1,23 +1,45 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <!--Bootsrap CSS and Javascript-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+      $('a').click(function(){
+        $('html, body').animate({
+            scrollTop: $( $.attr(this, 'href') ).offset().top
+        }, 500);
+        return false;
+      });
+    </script>
     <!--Fonts-->
     <link href='http://fonts.googleapis.com/css?family=Lato:400,300,200,100' rel='stylesheet' type='text/css'>
     <title>Ophast</title>
   </head>
 
   <body>
-    <div class="header">
-      <div class="logo">
+    <div id="header">
+      <div id="logo">
         <h1>OPHAST</h1>
         <img id="ophast_logo" src="img/ophast_low.png" />
         <h1>JONAN SEELEY</h1>
       </div>
+      <a href="#ctf">
+        <i class="fa fa-chevron-down fa-3x" id="down"></i>
+      </a>
     </div>
+
+    <div id="ctf">
+      <div class="container">
+        <h1>CTFs</h1>
+        <p>I am a part of the team TheePotato which competes in capture-the-flag hacking competitions.  So far, our greatest accomplishment is placing 26th out of over 3000 teams in picoCTF, run by Carneige Mellon University.</p>
+      </div>
+    </div>
+
+    <div class=""
   </body>
 </html>

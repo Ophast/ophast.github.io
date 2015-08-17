@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+#header {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url("../img/butterfly.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#header #logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#header h1 {
+  font-family: 'Lato' sans-serif;
+  font-weight: 100;
+  font-size: 5em;
+  text-align: center;
+  padding: 1em 0;
+  color: white;
+  letter-spacing: .1em;
+  margin: 0;
+}
+
+#ophast_logo {
+  width: 25em;
+  display: block;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+#down {
+  color: white;
+  position: absolute;
+  padding-left: 50%;
+  padding-right: 50%;
+  bottom: 0;
+  padding-bottom: .5em;
+}
+
+#ctf {
+  padding: 15em 0;
+  background: url("../img/pico.png") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#ctf h1 {
+  text-align: center;
+  font-family: 'Lato' sans-serif;
+  font-size: 5em;
+  padding-bottom: 1em;
+  color: white;
+}
+
+#ctf p {
+  text-align: center;
+  font-family: 'Lato' sans-serif;
+  font-size: 1.5em;
+  color: white;
+}
