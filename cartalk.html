@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Stage 1: Car Talk</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:200,300,400" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script>
+      function validateForm() {
+        var ans = document.getElementById("answer").value.toLowerCase();
+        if (ans === atob("YmFkIGlnbml0aW9uIGNvaWw=") ||
+            ans === atob("aWduaXRpb24gY29pbA==") ||
+            ans === atob("Y29pbA==")) {
+          window.location.href = "webdetective.html";
+        } else {
+          alert("Hmm, Brutus may like that answer, but Caesar wouldn't.");
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="page">
+      <h1>Stage 1: Car Talk</h1>
+      <p>&emsp;&emsp;My buddy's car has started behaving weirdly and I'm not quite sure what's gone wrong with it.  I told him you're pretty experienced with cars, so he's sent me the following text describing the symptoms his car has been having.  Do you know what's gone bad?</p>
+      <p class="paper">Yeah, so the other day it stalled and left me stranded when I stopped at the intersection of Forbes and Morewood.  Before that, I thought I might have heard some backfiring and the car was running all weird.  It was really jerky and was idling really rough.  I probably should have pulled over earlier, but I was trying to make it to the gas station nearby after realizing that my gas was pretty low.  It may just be my faulty memory, but I'm pretty sure I filled up the gas tank way too recently to have to fill it up again, and it caught me off guard.</p>
+      <input type="text" id="answer">
+      <button onclick="validateForm()" class="button">Submit</button>
+    </div>
+  </body>
+</html>

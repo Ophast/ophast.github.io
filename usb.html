@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Stage 3: USB Quandaries</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:200,300,400" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script>
+      function validateForm() {
+        var ans = document.getElementById("answer").value.toLowerCase();
+        if (ans === atob("cXVhbnR1bSB0dW5uZWxpbmc=")) {
+          window.location.href = "julius.html";
+        } else {
+          alert("Look a little harder...");
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="page">
+      <h1>Stage 3: USB Quandaries</h1>
+      <p>&emsp;&emsp;I'm trying to make my own version (rip-off) of USB drives in order to make loads of profit.  In order to make my PSB (Proprietary Serial Bus) drives, I need to know how USB drives erase their memory.  I found the image below that seems to be related to the process, but someone obscured the important part of the image.  Who knew a universal standard was under so much secracy.  Can you help me figure out the process by which erasure is done?</p>
+      <img src="usb.png" alt="usb_picture" id="usb">
+      <input type="text" id="answer">
+      <button id="sub" onclick="validateForm()" class="button">Submit</button>
+    </div>
+  </body>
+</html>

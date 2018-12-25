@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Stage 5: Car Talk Part 2</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:200,300,400" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script>
+      function validateForm() {
+        var ans = document.getElementById("answer").value.toLowerCase();
+        if (ans === atob("MTk4ODg4") || ans === atob("MTk4LDg4OA==")) {
+          window.location.href = "final.html";
+        } else {
+          alert("Not quite... Remember to carry that 1!");
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="page">
+      <h1>Stage 5: Car Talk Part 2</h1>
+      <p>&emsp;&emsp;I hope you liked those Car Talk puzzlers, because you'll have to solve one to advance to the next stage!  You may want to grab a pencil a paper for this one!  This doozy of a puzzler comes from Terry Sare, but I've adjusted it a bit.  Terry writes,</p>
+      <p class="paper">
+      &emsp;&emsp;I was driving on the highway the other day recently and I happened to notice my odometer.  Like most odometers nowadays, it shows six digits in whole miles -- no tenths of a mile.  At the time, my car had miles in the hundred thousands, so my odometer was showing 6 digits with no leading zeros.
+      <br/><br/>
+      &emsp;&emsp;Now, what I saw that day was very interesting. I noticed that the last 4 digits formed a palindrome.  Even more interesting, one mile later, the last 5 numbers were palindromic.  Another mile later, the middle 4 digits of 6 were palindromic.  Now, this may seem unbelievable, but one mile later, all 6 digits formed a palindrome!
+      <br/><br/>
+      &emsp;&emsp;Assuming I'm not a liar, how many miles were on my odometer when I first looked at it?
+      </p>
+      <input type="text" id="answer">
+      <button onclick="validateForm()" class="button">Submit</button>
+    </div>
+  </body>
+</html>
